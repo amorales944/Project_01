@@ -1,9 +1,12 @@
 # Project_01
 P01 - Wesley, Mauricio and Armando
 
+<<<<<<< HEAD
+=======
 # Project_01
 P01 - Wesley, Mauricio and Armando
 
+>>>>>>> 6418f2781136f3475fde55920024ae889ac9812d
 
 # Name of Project
 
