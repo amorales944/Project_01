@@ -1,0 +1,15 @@
+body {
+width:100%; 
+
+
+}
+
+.container {
+    width:750px;
+    margin: 5px auto;
+}
+
+.scoreboard {
+
+    margin: 5px;
+}
