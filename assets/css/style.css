@@ -1,7 +1,7 @@
 body {
 width:100%; 
-
-
+/* background-image: url("https://cdn.hipwallpaper.com/i/97/43/NxZ2dn.jpg");
+    backgrpuond-repeat: no-repeat; */
 }
 
 .container {
@@ -11,5 +11,16 @@ width:100%;
 
 .scoreboard {
 
-    margin: 5px;
+    /* margin-left: .2px; */
 }
+
+
+ div, .jumbotron, h1 {
+    font-family: "Lobster", cursive;
+
+}
+/* 
+h1 {
+    color: red !important;
+} */
+
