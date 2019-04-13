@@ -9,23 +9,24 @@ var config = {
   firebase.initializeApp(config);
   var database = firebase.database();
 
-  
-
-
-  // loading GIFS onto page owhen website is loaded
-  document.onload = function(){
-    function rendergifs() {
-    $("#canvasgifs1").empty();
+    // loading GIFS onto page owhen website is loaded
+ $( document ).ready(function() {
+  $("#canvasgifs1").empty();
   
       
-          var a = $("<img>");
-      
-          a.attr("src", "placeholder140x100.png");
-      
-          $("").append(a);
-          console.log(a)
-    }
-    rendergifs();
-      
+  var a = $("<img>");
+  
+  a.attr("src", "assets/images/Placeholderimage.png");
+  a.width(50);
+ 
 
-  };
+  $("#canvasgifs1").append(a);
+  console.log(a)
+
+
+
+  });
+
+
+
+  
