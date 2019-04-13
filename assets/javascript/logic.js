@@ -9,13 +9,12 @@ var config = {
   firebase.initializeApp(config);
   var database = firebase.database();
 
-  $("#add-train-btn").on("click", function (event) {
   
 
 
+  // loading GIFS onto page owhen website is loaded
+  document.onload = function(){
+    
 
 
-
-
-
-}
+  };
