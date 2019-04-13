@@ -1,6 +1,7 @@
 body {
 width:100%; 
-background-image: url("https://cdn.hipwallpaper.com/i/97/43/NxZ2dn.jpg");
+/* background-image: url("https://cdn.hipwallpaper.com/i/97/43/NxZ2dn.jpg");
+    backgrpuond-repeat: no-repeat; */
 }
 
 .container {
@@ -10,7 +11,7 @@ background-image: url("https://cdn.hipwallpaper.com/i/97/43/NxZ2dn.jpg");
 
 .scoreboard {
 
-    margin: 5px;
+    /* margin-left: .2px; */
 }
 
 
