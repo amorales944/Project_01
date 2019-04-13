@@ -29,3 +29,11 @@ var config = {
       
 
   };
+// $(function() {
+$("#lever").on("click", function(){
+   var leverImg = $("#leverBtn").attr("src", "./assets/images/leverDownImg.png");
+   return false;
+
+ });
+
+// })
