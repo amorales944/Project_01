@@ -1,7 +1,7 @@
 body {
 width:100%; 
-/* background-image: url("https://cdn.hipwallpaper.com/i/97/43/NxZ2dn.jpg");
-    backgrpuond-repeat: no-repeat; */
+/* background-image: url("https://cdn.hipwallpaper.com/i/97/43/NxZ2dn.jpg"); */
+    /* backgrpuond-repeat: no-repeat; */
 }
 
 .container {
@@ -10,8 +10,8 @@ width:100%;
 }
 
 .scoreboard {
-
-    /* margin-left: .2px; */
+    padding-left: 2%;
+    /* margin-left: 1%; */
 }
 
 
@@ -19,6 +19,10 @@ width:100%;
     font-family: "Lobster", cursive;
 
 }
+
+/* #lever {
+    margin-right: 1%;
+} */
 /* 
 h1 {
     color: red !important;
