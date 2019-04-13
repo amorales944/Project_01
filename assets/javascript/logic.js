@@ -35,5 +35,4 @@ $("#lever").on("click", function(){
    return false;
 
  });
-
 // })
