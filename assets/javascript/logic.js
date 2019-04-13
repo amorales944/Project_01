@@ -14,7 +14,18 @@ var config = {
 
   // loading GIFS onto page owhen website is loaded
   document.onload = function(){
-    
-
+    function rendergifs() {
+    $("#canvasgifs1").empty();
+  
+      
+          var a = $("<img>");
+      
+          a.attr("src", "placeholder140x100.png");
+      
+          $("").append(a);
+          console.log(a)
+    }
+    rendergifs();
+      
 
   };
