@@ -20,11 +20,26 @@ width:100%;
 
 }
 
-/* #lever {
-    margin-right: 1%;
-} */
+#lever {
+    padding: 0;
+    
+} 
 /* 
 h1 {
     color: red !important;
 } */
 
+/* .lever-img {
+
+} */
+
+.lever-img {
+width: 253px;
+height: 500px;
+
+
+}
+/* div div div img:click {
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+  } */
