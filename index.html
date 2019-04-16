@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Slot Machine</title>
+    <script src="http://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+    crossorigin="anonymous"></script>
     <!-- linking bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -24,6 +26,31 @@
 
     <div class="jumbotron bg-dark text-light">
         <h1 class="display-4 text-center">Live at The Casino</h1>
+//<<<<<<< mauricio
+
+        <hr>
+        <form class="form-inline">
+            <label class="sr-only" for="inlineFormInputName2">Name</label>
+            <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
+
+            <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+            <div class="input-group mb-2 mr-sm-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">@</div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
+            </div>
+
+            <div class="form-check mb-2 mr-sm-2">
+                <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                <label class="form-check-label" for="inlineFormCheck">
+                    Remember me
+                </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+        </form>
+//=======
         <hr>
                <form class="form-inline">
                 <label class="sr-only" for="inlineFormInputName2">Username</label>
@@ -38,6 +65,7 @@
                 </div>
                 <button type="submit" class="btn btn-primary mb-2">Submit</button>
               </form>
+//>>>>>>> master
     </div>
     <div class="container-fluid">
         <div class="row">
@@ -48,6 +76,25 @@
             <div class="col-6 slot-screen">
                 <h2 class="text-center">Slot Screen</h2>
                 <div class="row box-thing border border-dark border-5">
+// mauricio
+                    <div id="gifbox1" class="slot-screen inline col-4 border border-success" width="auto">
+                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                          <img src="./assets/images/Placeholderimage.png" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="./assets/images/Placeholder2.png" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="./assets/images/placeholder140x100.png" class="d-block w-100" alt="...">
+                                      </div>
+                                    </div>
+                                  </div>
+                    </div>
+                    <div id="gifbox2" class="slot-screen inline col-4 border border-success" width="auto"></div>
+                    <div id="gifbox3" class="slot-screen inline col-4 border border-success" width="auto"></div>
+//=======
                     <div id="canvasgifs1" class="inline col-lg-4 border border-success" >
                         <img id="slots" width="auto" height="500px"></img></div>
                     
@@ -60,6 +107,7 @@
                     <img id="slots" width="auto" height="500px"></img>
                     </div>
                     
+// master
 
 
                 </div>
@@ -86,8 +134,8 @@
 
     <!-- </div> -->
 
-    <script src="http://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
-        crossorigin="anonymous"></script>
+    <!-- <script src="http://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+        crossorigin="anonymous"></script> -->
     <script src="./assets/javascript/logic.js"></script>
 </body>
 
