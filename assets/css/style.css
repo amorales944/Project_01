@@ -14,15 +14,12 @@ width:100%;
     /* margin-left: 1%; */
 }
 
-
  div, .jumbotron, h1 {
     font-family: "Lobster", cursive;
-
 }
 
 #lever {
-    padding: 0;
-    
+    padding: 0;  
 } 
 /* 
 h1 {
@@ -34,10 +31,9 @@ h1 {
 } */
 
 .lever-img {
-width: 253px;
-height: 500px;
-
-
+    overflow:hidden;
+    width: 100%;
+    height: 100%;
 }
 /* div div div img:click {
     -webkit-transform: scaleY(-1);
