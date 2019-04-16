@@ -36,11 +36,7 @@ $("#lever").on("click", function(){
 
  });
 
-$(document).ready(function(){
-$('.carousel').carousel({
-  interval: 2000;
-})
 
- });
+
 
 });
