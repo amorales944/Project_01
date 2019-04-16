@@ -11,7 +11,7 @@ var config = {
 
   
 
-
+$(document).ready(function() {
   // loading GIFS onto page owhen website is loaded
   document.onload = function(){
     function rendergifs() {
@@ -35,4 +35,12 @@ $("#lever").on("click", function(){
    return false;
 
  });
-// })
+
+$(document).ready(function(){
+$('.carousel').carousel({
+  interval: 2000;
+})
+
+ });
+
+});
