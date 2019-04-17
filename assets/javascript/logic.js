@@ -30,10 +30,3 @@ $("#lever").on("click", function(){
    
    console.log(randomimg)
    return false;
- 
-
- 
-
- 
-
-
