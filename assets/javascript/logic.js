@@ -36,6 +36,7 @@ const fillslots = function() {
 
 
 
+
 $(document).ready(function(){
 
  
@@ -58,6 +59,17 @@ $(document).ready(function(){
     var leverImg = $("#leverBtn").attr("src", "./assets/images/leverDownImg.png");
   
     fillslots();
+
+$("#lever").on("click", function(){
+   
+  //Turns Lever button down
+  var leverImg = $("#leverBtn").attr("src", "./assets/images/leverDownImg.png");
+   });
+   
+   
+  //  Fills up slots
+   $("#canvasgifs1").empty();
+
    
    
     
@@ -72,10 +84,5 @@ $(document).ready(function(){
 
 
   
-
-
- 
- 
- 
 
 
