@@ -9,34 +9,31 @@ var config = {
   firebase.initializeApp(config);
   var database = firebase.database();
 
-  
 
-$(document).ready(function() {
-  // loading GIFS onto page owhen website is loaded
-  document.onload = function(){
-    function rendergifs() {
-    $("#canvasgifs1").empty();
-  
-      
-          var a = $("<img>");
-      
-          a.attr("src", "placeholder140x100.png");
-      
-          $("").append(a);
-          console.log(a)
-    }
-    rendergifs();
-      
+const slotsarray = ["./assets/images/cherry.png","./assets/images/diamond.png",
+"./assets/images/seven.png","./assets/images/orange.png"]
 
-  };
-// $(function() {
+var randomimg = Math.floor(Math.random() * slotsarray.length);
+
+
 $("#lever").on("click", function(){
-   var leverImg = $("#leverBtn").attr("src", "./assets/images/leverDownImg.png");
+   
+  //Turns Lever button down
+  var leverImg = $("#leverBtn").attr("src", "./assets/images/leverDownImg.png");
+   
+   
+   
+  //  Fills up slots
+   $("#canvasgifs1").empty();
+   
+   $("#canvasgifs1").html(randomimg);
+   
+   console.log(randomimg)
    return false;
+ 
 
  });
 
+ 
 
 
-
-});
