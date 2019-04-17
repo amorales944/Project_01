@@ -10,28 +10,72 @@ var config = {
   var database = firebase.database();
 
 
-const slotsarray = ["./assets/images/cherry.png","./assets/images/diamond.png",
-"./assets/images/seven.png","./assets/images/orange.png"]
+var cherry = "./assets/images/cherry.png";
+var diamond = "./assets/images/diamond.png";
+var orange = "./assets/images/orange.png";
+var seven =  "./assets/images/seven.png";
+
+  const slotsarray = ["cherry","diamond",
+"orange","seven"]
 
 var randomimg = Math.floor(Math.random() * slotsarray.length);
 
+const fillslots = function() {
+//  for (i=0, i < slotsarray.length; i++)
+ 
+  console.log("sfsfas");
+  $('#slot1').attr('src','');
+  $('#slot2').attr('src','');
+  $('#slot3').attr('src','');
+  
+  $('#slot1').attr('src', slotsarray[randomimg]);
+  $('#slot2').attr('src', slotsarray[randomimg]);
+  $('#slot3').attr('src', slotsarray[randomimg]);
+  console.log(slotsarray[randomimg])
+}
 
-$("#lever").on("click", function(){
+
+
+$(document).ready(function(){
+
+ 
+// putting starter images into slot machine
+
+  $('#slot1').attr('src','assets/images/cherry.png');
+  $('#slot2').attr('src','assets/images/diamond.png');
+  $('#slot3').attr('src','assets/images/seven.png');
+  
+
+
+  // empty
+
+  
+  
+  
+  $("#lever").on("click", function(){
+     console.log("clicked");
+    //Turns Lever button down
+    var leverImg = $("#leverBtn").attr("src", "./assets/images/leverDownImg.png");
+  
+    fillslots();
    
-  //Turns Lever button down
-  var leverImg = $("#leverBtn").attr("src", "./assets/images/leverDownImg.png");
    
-   
-   
-  //  Fills up slots
-   $("#canvasgifs1").empty();
-   
-   $("#canvasgifs1").html(randomimg);
-   
-   console.log(randomimg)
-   return false;
+    
+    
+    
+  
+   });
+});
+
+
+
+
+
+  
+
+
+ 
+ 
  
 
- });
 
-// })

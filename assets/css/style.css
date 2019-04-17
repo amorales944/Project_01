@@ -41,6 +41,15 @@ height: 500px;
 
 
 }
+
+#slot1, #slot2, #slot3 {
+
+    width: 100px auto;
+    height: 100 px auto;
+    padding: 2 px;
+    margin: 3 px;
+    
+}
 /* div div div img:click {
     -webkit-transform: scaleY(-1);
     transform: scaleY(-1);
