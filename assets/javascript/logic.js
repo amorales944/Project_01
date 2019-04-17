@@ -20,7 +20,7 @@ $("#lever").on("click", function(){
    
   //Turns Lever button down
   var leverImg = $("#leverBtn").attr("src", "./assets/images/leverDownImg.png");
-   
+   });
    
    
   //  Fills up slots
@@ -32,7 +32,7 @@ $("#lever").on("click", function(){
    return false;
  
 
- });
+ 
 
  
 
