@@ -56,7 +56,7 @@ var seven =  "./assets/images/seven.png";
 var randomimg = Math.floor(Math.random() * slotsarray.length);
 
 const fillslots = function() {
-//  for (i=0, i < slotsarray.length; i++)
+
  
   console.log("sfsfas");
   $('#slot1').attr('src','');
@@ -86,16 +86,9 @@ $(document).ready(function(){
     var leverImg = $("#leverBtn").attr("src", "./assets/images/leverDownImg.png");
   
     fillslots();
+    
 
-$("#lever").on("click", function(){
-   
-  //Turns Lever button down
-  var leverImg = $("#leverBtn").attr("src", "./assets/images/leverDownImg.png");
-   });
-   
-   
-  //  Fills up slots
-   $("#canvasgifs1").empty();
+
 
    });
 });
