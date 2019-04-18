@@ -188,6 +188,8 @@ height: 500px;
 .btn-yahoo:active,.btn-yahoo.active,.open>.dropdown-toggle.btn-yahoo{background-image:none}
 .btn-yahoo.disabled:hover,.btn-yahoo[disabled]:hover,fieldset[disabled] .btn-yahoo:hover,.btn-yahoo.disabled:focus,.btn-yahoo[disabled]:focus,fieldset[disabled] .btn-yahoo:focus,.btn-yahoo.disabled.focus,.btn-yahoo[disabled].focus,fieldset[disabled] .btn-yahoo.focus{background-color:#720e9e;border-color:rgba(0,0,0,0.2)}
 .btn-yahoo .badge{color:#720e9e;background-color:#fff}
+
+  /* } */
 /********** Social Buttons for Bootstrap *************/
 
 
@@ -195,43 +197,61 @@ height: 500px;
 
 
 
-  .vertical .carousel-inner {
-    height: 100%;
-  }
+ /* The following is code pertaining to the carousel slots sliding vertical */
+
+  .vert .carousel-item-next.carousel-item-left,
+.vert .carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.vert .carousel-item-next,
+.vert .active.carousel-item-right {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+}
+
+.vert .carousel-item-prev,
+.vert .active.carousel-item-left {
+-webkit-transform: translate3d(0,-100%, 0);
+        transform: translate3d(0,-100%, 0);
+}
+
+
+ /* End of this vertical section */
   
-  .carousel.vertical .item {
-    -webkit-transition: 0.6s ease-in-out top;
-       -moz-transition: 0.6s ease-in-out top;
-        -ms-transition: 0.6s ease-in-out top;
-         -o-transition: 0.6s ease-in-out top;
-            transition: 0.6s ease-in-out top;
-  }
-  
-  .carousel.vertical .active {
-    top: 0;
-  }
-  
-  .carousel.vertical .next {
-    top: 100%;
-  }
-  
-  .carousel.vertical .prev {
-    top: -100%;
-  }
-  
-  .carousel.vertical .next.left,
-  .carousel.vertical .prev.right {
-    top: 0;
-  }
-  
-  .carousel.vertical .active.left {
-    top: -100%;
-  }
-  
-  .carousel.vertical .active.right {
-    top: 100%;
-  }
-  
+
+ /* This is code for multiple items at once showing in carousel */
+
+  .carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+  transform: translateY(100%);
+}
+
+.carousel-inner .carousel-item-left.active, 
+.carousel-inner .carousel-item-prev {
+  transform: translateY(-100%)
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+.carousel-item.active-next {
+  display: flex;
+
   .carousel.vertical .item {
       left: 0;
   }​
+
