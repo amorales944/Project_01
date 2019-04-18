@@ -81,7 +81,7 @@ $("#lever").on("click", function(){
 
 
 $('.carousel').carousel({
-  interval: 20
+  interval: 10
 })
 
 
