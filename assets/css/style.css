@@ -22,16 +22,6 @@ width:100%;
     padding: 0;  
 } 
 
-
-/* 
-h1 {
-    color: red !important;
-} */
-
-/* .lever-img {
-
-} */
-
 .lever-img {
     overflow:hidden;
     width: 100%;
@@ -46,16 +36,10 @@ h1 {
     margin: 3 px;
     
 }
-/* div div div img:click {
-    -webkit-transform: scaleY(-1);
-    transform: scaleY(-1);
-  } */
+
   .slot-screen {
 height: 500px;
   }
-
-
-
 
   /*
  * Social Buttons for Bootstrap
@@ -204,7 +188,9 @@ height: 500px;
 .btn-yahoo:active,.btn-yahoo.active,.open>.dropdown-toggle.btn-yahoo{background-image:none}
 .btn-yahoo.disabled:hover,.btn-yahoo[disabled]:hover,fieldset[disabled] .btn-yahoo:hover,.btn-yahoo.disabled:focus,.btn-yahoo[disabled]:focus,fieldset[disabled] .btn-yahoo:focus,.btn-yahoo.disabled.focus,.btn-yahoo[disabled].focus,fieldset[disabled] .btn-yahoo.focus{background-color:#720e9e;border-color:rgba(0,0,0,0.2)}
 .btn-yahoo .badge{color:#720e9e;background-color:#fff}
+
   /* } */
+/********** Social Buttons for Bootstrap *************/
 
 
 
@@ -234,6 +220,7 @@ height: 500px;
 
  /* End of this vertical section */
   
+
  /* This is code for multiple items at once showing in carousel */
 
   .carousel-inner .carousel-item-right.active,
@@ -263,4 +250,8 @@ height: 500px;
 
 .carousel-item.active-next {
   display: flex;
+
+  .carousel.vertical .item {
+      left: 0;
+  }​
 
