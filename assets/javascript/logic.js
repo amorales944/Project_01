@@ -10,6 +10,41 @@ var config = {
   var database = firebase.database();
 
 
+// This is the github sign on part
+$("#loginBtn").on("click", function(){
+  var provider = new firebase.auth.GithubAuthProvider();
+
+  firebase.auth().getRedirectResult().then(function(result) {
+    if (result.credential) {
+      // This gives you a GitHub Access Token. You can use it to access the GitHub API.
+      var token = result.credential.accessToken;
+      // ...
+    }
+    // The signed-in user info.
+    var user = result.user;
+  }).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // The email of the user's account used.
+    var email = error.email;
+    // The firebase.auth.AuthCredential type that was used.
+    var credential = error.credential;
+    // ...
+  });
+});
+
+// Github sign out
+$("#logOutBtn").on("click", function(){
+  firebase.auth().signOut().then(function() {
+    // Sign-out successful.
+  }).catch(function(error) {
+    // An error happened.
+    console.log(error);
+  });
+});
+  
+
 var cherry = "./assets/images/cherry.png";
 var diamond = "./assets/images/diamond.png";
 var orange = "./assets/images/orange.png";
@@ -34,9 +69,6 @@ const fillslots = function() {
   console.log(slotsarray[randomimg])
 }
 
-
-
-
 $(document).ready(function(){
 
  
@@ -48,11 +80,6 @@ $(document).ready(function(){
   
 
 
-  // empty
-
-  
-  
-  
   $("#lever").on("click", function(){
      console.log("clicked");
     //Turns Lever button down
@@ -63,17 +90,13 @@ $(document).ready(function(){
 
 
 
-   
-   
-    
-    
-    
-  
    });
 });
 
 
-
+$('.carousel').carousel({
+  interval: 20
+})
 
 
   
