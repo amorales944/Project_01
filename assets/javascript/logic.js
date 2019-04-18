@@ -109,7 +109,9 @@ $("#lever").on("click", function(){
 });
 
 
-
+$('.carousel').carousel({
+  interval: 20
+})
 
 
   
