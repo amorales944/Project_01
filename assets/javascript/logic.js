@@ -108,22 +108,7 @@ const fillslots = function() {
 
 
 
-  
-};
 
-$("#lever").on("click", function(){
-  console.log("clicked");
- //Turns Lever button down
- var leverImg = $("#leverBtn").attr("src", "./assets/images/leverDownImg.png");
-
-<<<<<<< HEAD
- fillslots();
- 
-
-
-
-});
-=======
   $("#lever").on("click", function(){
      console.log("clicked");
      jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 500  // 2 seconds
@@ -139,15 +124,6 @@ $("#lever").on("click", function(){
    });
  
 
-
-
-
-
->>>>>>> master
-
-
-
-
-  
-
-
+$('.carousel').carousel({
+  interval: 10
+})

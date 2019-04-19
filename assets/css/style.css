@@ -1,7 +1,8 @@
 body {
 width:100%; 
- /* background-image: url("https://cdn.hipwallpaper.com/i/97/43/NxZ2dn.jpg"); */
-    /* backgrpuond-repeat: no-repeat; */
+background-image: url("https://cdn.hipwallpaper.com/i/97/43/NxZ2dn.jpg");
+    background-repeat: no-repeat;
+    /* background-blend-mode: screen; */
 }
 
 .container {
