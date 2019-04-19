@@ -1,3 +1,6 @@
+
+
+
 var config = {
     apiKey: "AIzaSyBkgrPX8HY6Fx6sxtylyG76ZZF2MrKsr7I",
     authDomain: "project-01-42b5e.firebaseapp.com",
@@ -50,26 +53,26 @@ var diamond = "./assets/images/diamond.png";
 var orange = "./assets/images/orange.png";
 var seven =  "./assets/images/seven.png";
 
-  const slotsarray = ["cherry","diamond",
-"orange","seven"]
+const slotsarray = ["cherry","diamond", "orange","seven"]
 
 var randomimg = Math.floor(Math.random() * slotsarray.length);
 
 const fillslots = function() {
-
+  // $('.carousel').carousel({
+  //   interval: 20
+  // })
  
-  console.log("sfsfas");
-  $('#slot1').attr('src','');
-  $('#slot2').attr('src','');
-  $('#slot3').attr('src','');
+  // console.log("sfsfas");
+  // $('.carousel').carousel({
+  //   interval: 20
+  // })
+
+  // console.log("sped up")
   
-  $('#slot1').attr('src', slotsarray[randomimg]);
-  $('#slot2').attr('src', slotsarray[randomimg]);
-  $('#slot3').attr('src', slotsarray[randomimg]);
-  console.log(slotsarray[randomimg])
+
 }
 
-$(document).ready(function(){
+// $(document).ready(function(){
 
  
 // putting starter images into slot machine
@@ -82,21 +85,25 @@ $(document).ready(function(){
 
   $("#lever").on("click", function(){
      console.log("clicked");
+     jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 500  // 2 seconds
+
     //Turns Lever button down
     var leverImg = $("#leverBtn").attr("src", "./assets/images/leverDownImg.png");
   
-    fillslots();
+     fillslots();
+
+
+  
     
-
-
-
    });
-});
+ 
 
 
-$('.carousel').carousel({
-  interval: 20
-})
+
+
+
+
+
 
 
   
