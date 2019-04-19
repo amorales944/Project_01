@@ -1,3 +1,6 @@
+
+
+
 var config = {
     apiKey: "AIzaSyBkgrPX8HY6Fx6sxtylyG76ZZF2MrKsr7I",
     authDomain: "project-01-42b5e.firebaseapp.com",
@@ -50,13 +53,14 @@ var diamond = "./assets/images/diamond.png";
 var orange = "./assets/images/orange.png";
 var seven =  "./assets/images/seven.png";
 
-  const slotsarray = ["cherry","diamond",
-"orange","seven"]
+const slotsarray = ["cherry","diamond", "orange","seven"]
 
 var randomimg = Math.floor(Math.random() * slotsarray.length);
 
 const fillslots = function() {
-
+  // $('.carousel').carousel({
+  //   interval: 20
+  // })
  
   console.log("sfsfas");
   $('#slot1').empty('src','');
@@ -90,6 +94,17 @@ const fillslots = function() {
     // };
   
 
+  // console.log("sfsfas");
+  // $('.carousel').carousel({
+  //   interval: 20
+  // })
+
+  // console.log("sped up")
+  
+
+}
+
+// $(document).ready(function(){
 
 
 
@@ -101,17 +116,36 @@ $("#lever").on("click", function(){
  //Turns Lever button down
  var leverImg = $("#leverBtn").attr("src", "./assets/images/leverDownImg.png");
 
+<<<<<<< HEAD
  fillslots();
  
 
 
 
 });
+=======
+  $("#lever").on("click", function(){
+     console.log("clicked");
+     jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 500  // 2 seconds
+
+    //Turns Lever button down
+    var leverImg = $("#leverBtn").attr("src", "./assets/images/leverDownImg.png");
+  
+     fillslots();
 
 
-$('.carousel').carousel({
-  interval: 20
-})
+  
+    
+   });
+ 
+
+
+
+
+
+>>>>>>> master
+
+
 
 
   
