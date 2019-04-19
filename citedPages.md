@@ -4,3 +4,5 @@
     -http://ikonen.me/examples/slot/
 
 slot machine reference
+
+- [Modal sampled](https://mdbootstrap.com/docs/jquery/modals/forms/)
