@@ -95,7 +95,7 @@ $(document).ready(function(){
 
 
 $('.carousel').carousel({
-  interval: 20
+  interval: 10
 })
 
 
