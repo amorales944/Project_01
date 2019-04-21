@@ -59,10 +59,15 @@ const fillslots = function() {
 
  
   console.log("sfsfas");
-  $('#slot1').attr('src','');
-  $('#slot2').attr('src','');
-  $('#slot3').attr('src','');
-  
+  $('#slot1').empty('src','');
+  $('#slot2').empty('src','');
+  $('#slot3').empty('src','');
+
+  $('.carousel').carousel({
+    interval: 100
+
+  })
+console.log("spedupslot")
   $('#slot1').attr('src', slotsarray[randomimg]);
   $('#slot2').attr('src', slotsarray[randomimg]);
   $('#slot3').attr('src', slotsarray[randomimg]);
@@ -85,6 +90,9 @@ $(document).ready(function(){
     //Turns Lever button down
     var leverImg = $("#leverBtn").attr("src", "./assets/images/leverDownImg.png");
   
+    // $('.carousel').carousel({
+    //     interval: 100
+    //    })
     fillslots();
     
 
@@ -95,10 +103,10 @@ $(document).ready(function(){
 
 
 $('.carousel').carousel({
-  interval: 10
+  interval: 100
 })
 
-
+// $('.carousel').carousel(pause)
   
 
 
