@@ -1,13 +1,10 @@
 # Project_01
 P01 - Wesley, Mauricio and Armando
 
-# Project_01
-P01 - Wesley, Mauricio and Armando
-
 
 # Name of Project
 
-- [Live Site](https://amorales944.github.io/Project_01/)
+- [Project_01 - Live Site](https://amorales944.github.io/Project_01/)
 
 ## Project Summary
 
