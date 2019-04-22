@@ -60,8 +60,7 @@ height: 500px;
 /********** End Social Buttons for Bootstrap *************/
 
  /* The following is code pertaining to the carousel slots sliding vertical */
-
-  .vert .carousel-item-next.carousel-item-left,
+.vert .carousel-item-next.carousel-item-left,
 .vert .carousel-item-prev.carousel-item-right {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
@@ -78,8 +77,6 @@ height: 500px;
 -webkit-transform: translate3d(0,-100%, 0);
         transform: translate3d(0,-100%, 0);
 }
-
-
  /* End of this vertical section */
   
 
@@ -90,7 +87,11 @@ height: 500px;
     transition: transform .2s ease, -webkit-transform .2s ease;
   }
 
+
+.carousel-inner .carousel-item-right.active,
+
   /* .carousel-inner .carousel-item-right.active,
+
 .carousel-inner .carousel-item-next {
   transform: translateY(100%);
 }
@@ -106,43 +107,14 @@ height: 500px;
 } */
 
 
-
-
 /* The following block of code is intended to speed up the carousel a little more... */
 .carousel .carousel-item {
   transition-duration: 0.1s;
 }
 
-
-
-
-
-
-/* .carousel-item { 
-  position: relative;
-  display: ;
-  -webkit-transition: 0.6s ease-in-out left;
-  -moz-transition: 0.6s ease-in-out left;
-  -o-transition: 0.6s ease-in-out left;
-  transition: 0.1s linear left;
-}   */
-
-
-
-
-
-
-
-/* .carousel-item.active-next {
-  display: flex; */
-
-  /* .carousel.vertical .item {
-      left: 0;
-  }​ */
-
-
 .carousel-item.active-next {
   display: flex;
+
 }
 
 #instructions, p ,li {
@@ -150,4 +122,3 @@ height: 500px;
     font-weight: bold;
     
 }
-
