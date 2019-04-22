@@ -88,18 +88,13 @@ $(document).ready(function(){
     
      
   var fillslots = function() {
-
     $('.carousel').carousel({
       interval: 20
       })
-      $("#scoreboard").text("GOOD LUCK!!")
       console.log("function clicked")
     $("#carouselcontrol").carousel('pause')
+     };
 
-      
-    };
-
-    
   });
 
     

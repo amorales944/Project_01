@@ -211,12 +211,13 @@
 
 
                 </div>
-                <p id="scoreboard"> <h2>INSTRUCTIONS</h2>
+                <div id="instructions">
+                <p> <h2>INSTRUCTIONS</h2>
                     Welcome to the Slots, hope your feeling lucky! In order to play., click the lever in order to stop the slots.
                 Scoring depends on the items the slot may land on some combinations being worth more than others. Listed below is
                 each items value. Combinations are the added value of the items chosen, unless all three items are the same, in which
-                case the value is multiplied by 5. An example being three Sevens equaling 103 points. (7 x 3 x 5 = 103)
-
+                case the value is multiplied by 5. An example being three Sevens equaling 103 points. (7 x 3 x 5 = 103)</p>
+                </div>
                 <div>
                     <li>
                         <ul>Cherry = 2 points</ul>
@@ -225,26 +226,96 @@
                         <ul>Diamond = 10 points</ul>
                     </li>
                 </div>
+            </div>
+            
 
 
-                </p>
-            </div>
-            <div class="col-4 border border-dark scoreboard">
-                <div class="row">
-                    <h2>Leaderboard</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero deserunt adipisci nisi ratione
-                        obcaecati, officia quisquam perspiciatis incidunt quis fugiat, tenetur sunt? Voluptates error
-                        magni expedita voluptatibus tempora, reiciendis animi?</p>
-                </div>
-                <div class="row">
-                    <h2>User Current Score</h2>
-                    <p id="current score">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolore quisquam cum quis iusto
-                        eveniet vel eos, explicabo aliquid nemo sed dicta quaerat obcaecati magni odit quo, deserunt,
-                        alias in!</p>
-                </div>
-            </div>
+<!-- Scoreboard DIV open -->
+<div class="col-4  card bg-dark scoreboard">
+        <div class="row">
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th class="text-center" scope="col">Leaderboard</th>
+                        <th></th>
+                    </tr>
+                </thead>
+            </table>
+            <table class="table table-striped table-dark">
+                <thead>
+                  <tr>
+                    
+                    <th scope="col">Name</th>
+                    <th scope="col">Score</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Mauricio</th>
+                    <td>520</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Wes</th>
+                    <td>490</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Armando</th>
+                    <td>300</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+            </table>
         </div>
-    </div>
+
+        <div class="row"> 
+            <table class="table table-dark">
+                    <thead>
+                <tr>
+                    <th></th>
+                    <th class="text-center" scope="col">Current Users</th>
+                    <th></th>
+                </tr>
+            </thead>
+            </table>
+                <table class="table table-striped table-dark">
+                    <thead>
+                      <tr>
+                        
+                        <th scope="col">Name</th>
+                        <th scope="col">Score</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Mauricio</th>
+                        <td>520</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Wes</th>
+                        <td>490</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Armando</th>
+                        <td>300</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                </table>
+        </div>
+    </div> <!-- Scoreboard DIV close -->
 
     <!-- </div> -->
 
