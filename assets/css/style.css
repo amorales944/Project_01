@@ -42,6 +42,7 @@ background-image: url("https://cdn.hipwallpaper.com/i/97/43/NxZ2dn.jpg");
 height: 500px;
   }
 
+
   /*
  * Social Buttons for Bootstrap
  *
@@ -82,8 +83,8 @@ height: 500px;
  /* This is code for multiple items at once showing in carousel */
  .carousel-inner .carousel-item {
     transition: -webkit-transform 1s ease;
-    transition: transform 1s ease;
-    transition: transform 1s ease, -webkit-transform 1s ease;
+    transition: transform .2s ease;
+    transition: transform .2s ease, -webkit-transform .2s ease;
   }
 
 
@@ -106,37 +107,18 @@ height: 500px;
 } */
 
 
-
-
 /* The following block of code is intended to speed up the carousel a little more... */
 .carousel .carousel-item {
   transition-duration: 0.1s;
 }
 
-
-
-
-
-
-
-/* .carousel-item { 
-  position: relative;
-  display: ;
-  -webkit-transition: 0.6s ease-in-out left;
-  -moz-transition: 0.6s ease-in-out left;
-  -o-transition: 0.6s ease-in-out left;
-  transition: 0.1s linear left;
-}   */
-
-/* .carousel-item.active-next {
-  display: flex; */
-
-  /* .carousel.vertical .item {
-      left: 0;
-  }​ */
-
-
-
 .carousel-item.active-next {
   display: flex;
+
+}
+
+#instructions, p ,li {
+    font-size: 25px;
+    font-weight: bold;
+    
 }
