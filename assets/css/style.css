@@ -228,8 +228,8 @@ height: 500px;
  /* This is code for multiple items at once showing in carousel */
  .carousel-inner .carousel-item {
     transition: -webkit-transform 1s ease;
-    transition: transform 1s ease;
-    transition: transform 1s ease, -webkit-transform 1s ease;
+    transition: transform .2s ease;
+    transition: transform .2s ease, -webkit-transform .2s ease;
   }
 
   .carousel-inner .carousel-item-right.active,
