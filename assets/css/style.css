@@ -86,7 +86,11 @@ height: 500px;
     transition: transform 1s ease, -webkit-transform 1s ease;
   }
 
+
 .carousel-inner .carousel-item-right.active,
+
+  /* .carousel-inner .carousel-item-right.active,
+
 .carousel-inner .carousel-item-next {
   transform: translateY(100%);
 }
@@ -99,7 +103,39 @@ height: 500px;
 .carousel-inner .carousel-item-right,
 .carousel-inner .carousel-item-left{ 
   transform: translateY(0);
+} */
+
+
+
+
+/* The following block of code is intended to speed up the carousel a little more... */
+.carousel .carousel-item {
+  transition-duration: 0.1s;
 }
+
+
+
+
+
+
+
+/* .carousel-item { 
+  position: relative;
+  display: ;
+  -webkit-transition: 0.6s ease-in-out left;
+  -moz-transition: 0.6s ease-in-out left;
+  -o-transition: 0.6s ease-in-out left;
+  transition: 0.1s linear left;
+}   */
+
+/* .carousel-item.active-next {
+  display: flex; */
+
+  /* .carousel.vertical .item {
+      left: 0;
+  }​ */
+
+
 
 .carousel-item.active-next {
   display: flex;

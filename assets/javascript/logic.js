@@ -67,6 +67,17 @@ const fillslots = function() {
   $('#slot2').empty('src','');
   $('#slot3').empty('src','');
 
+
+  $('.carousel').carousel({
+    interval: 100
+
+  })
+console.log("spedupslot")
+  $('#slot1').attr('src', slotsarray[randomimg]);
+  $('#slot2').attr('src', slotsarray[randomimg]);
+  $('#slot3').attr('src', slotsarray[randomimg]);
+  console.log(slotsarray[randomimg])
+
   for (i=0; i < slotsarray.length; i++) {
     var b = $("<img>")
     console.log(orange)
@@ -102,6 +113,7 @@ const fillslots = function() {
   // console.log("sped up")
   
 
+  
 }
 
 // $(document).ready(function(){
@@ -116,7 +128,16 @@ const fillslots = function() {
     //Turns Lever button down
     var leverImg = $("#leverBtn").attr("src", "./assets/images/leverDownImg.png");
   
+
+    // $('.carousel').carousel({
+    //     interval: 100
+    //    })
+    fillslots();
+    
+
+
      fillslots();
+
 
 
   
@@ -125,5 +146,13 @@ const fillslots = function() {
  
 
 $('.carousel').carousel({
-  interval: 10
+  interval: 100
 })
+
+
+// $('.carousel').carousel(pause)
+  
+
+
+
+
