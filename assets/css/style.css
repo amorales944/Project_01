@@ -6,7 +6,7 @@ background-image: url("https://cdn.hipwallpaper.com/i/97/43/NxZ2dn.jpg");
 }
 
 .container {
-    width:750px;
+    width:100%;
     margin: 5px auto;
 }
 
@@ -120,5 +120,16 @@ height: 500px;
 #instructions, p ,li {
     font-size: 25px;
     font-weight: bold;
+    border:5 solid black;
+    background-color: #444;
+    padding: 5 5 5 5 px;
+    margin: 5 px;
     
 }
+
+p {
+    padding: 5 px;
+    margin: 5 px;
+
+}
+
