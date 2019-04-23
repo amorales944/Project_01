@@ -51,11 +51,12 @@ $("#logOutBtn").on("click", function(){
 
 
 
-
-var cherry = 4
-var diamond = 3
-var orange = 2
-var seven =  1
+// Slot variables and timer
+var cherry = 2
+var diamond = 10
+var orange = 5
+var seven =  7
+var timer;
 
 const slotsarray = ["cherry","diamond", "orange","seven"]
 
@@ -66,40 +67,57 @@ var randomimg = Math.floor(Math.random() * slotsarray.length);
 $(document).ready(function(){
 
 
-
   $("#lever").on("click", function(){
      console.log("clicked");
 
     //Turns Lever button down
    $("#leverBtn").attr("src", "./assets/images/leverDownImg.png");
+
   
-     fillslots();
+    //  fillslots();
    
-    // Stops first carousel
+    // Stops Slots
      $("#carouselExampleControls1").carousel('pause')
-     $("#carouselExampleControls2").carousel('pause')
-     $("#carouselExampleControls3").carousel('pause')
+     window.setTimeout(delaylastslot, 2000)
+     window.setTimeout(delayslot, 3000)
+    
+
+    //  delayslot();
+    //  setTimeout(delayslot, 3000)
+     
+    //  $("#carouselExampleControls2").carousel('pause')
+    //  $("#carouselExampleControls3").carousel('pause')
     
      
 
     });
 
+    
+    delaylastslot= function() {
+      console.log("worked again")
+      $("#carouselExampleControls3").carousel('pause')
+  
+    };
+ 
+ 
+    delayslot= function() {
+    // window.setTimeout(delayslot, 3000)
+    console.log("worked")
+    $("#carouselExampleControls2").carousel('pause')
+  
+  };
+    
+
 
     
      
   var fillslots = function() {
-    $('.carousel').carousel({
-      interval: 20
-      })
       console.log("function clicked")
     $("#carouselcontrol").carousel('pause')
-     };
+   };
 
-  });
+});
 
-    
-
-   
     $('.carousel').carousel({
       interval: 20
     })
